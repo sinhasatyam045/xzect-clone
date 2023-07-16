@@ -1,0 +1,430 @@
+.container {
+  height: 100%;
+  overflow: auto;
+  /* background-color: aqua; */
+}
+
+#intro {
+  /* font-family: "__Roboto_9566ad", "__Roboto_Fallback_9566ad"; */
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.transform {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: auto;
+  background-color: #1e232f;
+  border-top: rgb(52, 51, 51);
+  border-style: solid;
+  border-width: 2px;
+  padding: 28px 0px;
+  /* padding: 5% 10%; */
+  /* margin: auto; */
+  /* background-color: #262c3a; */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+    to right,
+    rgb(219, 57, 84),
+    rgb(132, 19, 149),
+    rgb(144, 238, 229)
+  );
+  border-image-slice: 1;
+  padding: 16px 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.left,
+.right {
+  /* flex-basis: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  /* text-align: center; */
+  /* background-color: #1c2232; */
+  background-color: #1c2233;
+  line-height: 1.2;
+}
+
+.left {
+  width: 50%;
+  padding: 20px 100px;
+}
+
+.right {
+  width: 50%;
+}
+
+.button {
+  padding: 12px 72px;
+  background-color: transparent;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+}
+
+.button1 {
+  margin-right: 36px;
+  background-color: #065f54;
+}
+
+.button2 {
+  border: #5f76fc;
+  border-width: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.servicesHeading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.servicesBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Adjust the gap between cards as needed */
+  padding: 20px 220px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: 2px solid #666767;
+  border-radius: 4px;
+  padding: 20px;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 400px; /* Adjust the image size as needed */
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.card button {
+  padding: 8px 16px;
+  background-color: #065f54;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.techStack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.techStackHeading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.techStackBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Adjust the gap between cards as needed */
+  padding: 40px 200px;
+}
+
+.techStackCard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 150px; /* Set a fixed width for the cards */
+  padding: 8px 16px;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Add box shadow */
+}
+
+.techStackImage {
+  /* width: 100%; */
+  height: 35px; /* Adjust the height as needed */
+  object-fit: contain;
+}
+
+.techStackName {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(26, 24, 24);
+}
+
+.techStackButton {
+  color: #ff5f08;
+  border: 1px solid #ff5f08;
+  background-color: white; /* Set the default background color */
+  font-weight: "bold";
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 700;
+  margin-top: 20pxx;
+}
+
+.techStackButton:hover {
+  color: black; /* Change text color on hover */
+  background-color: #ff5f08; /* Change background color on hover */
+}
+
+.footer-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 200px;
+  background-color: #1d2233;
+  background-image: url("https://www.xzect.com/assets/images/patterns/ttten.svg");
+}
+
+.footer-cta-container h2 {
+  color: white;
+  font-size: 2.75rem;
+}
+
+.footer-cta-container p {
+  font-size: 56px;
+  font-weight: 700;
+  background: linear-gradient(100deg, #fb2576, #5e76fd 50%, #6df1af 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); */
+}
+
+.footer-cta-container button {
+  font-size: 1.375rem;
+  padding: 0.75rem 2rem;
+  margin: 2rem;
+  background-image: linear-gradient(
+    145deg,
+    #dd0255,
+    #3047c9 30%,
+    #441fff 65%,
+    #02c362 85%
+  );
+  background-size: 200% 200%;
+  color: white;
+  outline: none;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
+  transition: background-position 0.45s cubic-bezier(0.18, 0.77, 0.56, 1);
+}
+
+.footer-cta-container button:hover {
+  background-position: 100% 100%;
+}
+
+.footer-container {
+  background-color: #1e1f1f;
+  border-top: 2px solid;
+  border-image: linear-gradient(
+    to right,
+    rgb(219, 57, 84),
+    rgb(132, 19, 149),
+    rgb(144, 238, 229)
+  );
+  border-image-slice: 1;
+  padding: 0px 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info {
+  display: flex;
+  color: white;
+  /* justify-content: space-between; */
+  height: 90vh;
+  gap: 20px;
+  width: 100%;
+  padding: 80px 0px;
+}
+
+.footer-info .row {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.footer-info .row:first-child .column {
+  width: calc(55% + 20%); /* Adjust the width as needed */
+}
+
+.footer-info .column {
+  width: 45%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-info .column {
+    width: 45%;
+  }
+}
+
+.footer-info h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin-bottom: 1rem;
+  font-size: 1 rem;
+  line-height: 2.5;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-info li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-info li:hover {
+  text-decoration: underline;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.dancing-box-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c2233;
+}
+
+.dancing-box {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+}
+
+.box-cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+}
+
+.box-faces {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-front {
+  transform: translateZ(100px);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+.box-back {
+  transform: translateZ(-100px) rotateY(180deg);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+.box-top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+.box-bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+.box-left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+.box-right {
+  transform: rotateY(90deg) translateZ(100px);
+  background-image: url("https://www.xzect.com/assets/images/xzect-logo-space.svg");
+  background-size: cover;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(1turn);
+  }
+}
