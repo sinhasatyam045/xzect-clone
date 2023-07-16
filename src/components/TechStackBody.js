@@ -62,14 +62,40 @@ const TechStackBody = () => {
   ];
 
   return (
-    <div className="techStackBody">
-      {techStack.map((techStack, index) => (
-        <TechStackCard
-          key={index}
-          imageSrc={techStack.imageSrc}
-          techStackName={techStack.techName}
-        />
-      ))}
+    <div className="techStack-container">
+      <div className="techStackHeading">
+        <span
+          style={{
+            fontSize: "40px",
+            fontWeight: "bold",
+            marginBottom: "20px",
+          }}
+        >
+          Leverage our software & hardware expertise
+        </span>
+        <span
+          style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            marginBottom: "20px",
+            color: "#666",
+          }}
+        >
+          Use our services and tech expertise to create disruptive products &
+          solutions that can revolutionize your business and stay ahead with
+          evolving technological advancements.
+        </span>
+      </div>
+      <div className="techStackBody">
+        {techStack.map((techStack, index) => (
+          <TechStackCard
+            key={index}
+            imageSrc={techStack.imageSrc}
+            techStackName={techStack.techName}
+          />
+        ))}
+      </div>
+      <button className="techStackButton">Explore Our Entire Tech Stack</button>
     </div>
   );
 };
