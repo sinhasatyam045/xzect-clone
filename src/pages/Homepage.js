@@ -20,7 +20,7 @@ function HomePage() {
               fontWeight: "bold",
               marginLeft: "50px",
               paddingLeft: "20px",
-              marginBottom: "40px",
+              marginBottom: "41px",
             }}
           >
             <span style={{ color: "#BD1052" }}>Build,</span>{" "}
